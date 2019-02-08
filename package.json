@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soltanloo/todobar.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Hossein Soltanloo",
+    "email": "hossein.soltanloo@gmail.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/soltanloo/todobar/issues"
   },
-  "homepage": "https://github.com/soltanloo/todobar#readme"
+  "homepage": "https://github.com/soltanloo/todobar#readme",
+  "devDependencies": {
+    "electron": "^4.0.4"
+  },
+  "dependencies": {
+    "menubar": "^5.2.3"
+  }
 }
